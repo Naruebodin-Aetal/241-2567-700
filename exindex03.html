@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*ส่วนนี้คือ CSS*/
+        /* ใช้สำหรับแต่ง (id class)*/
+        @font-face {
+            font-family: 'Kanit';
+            src: url('./Kanit/Kanit-Regular.ttf');
+        }
+
+        body {
+            font-family: 'Kanit';
+
+        }
+
+        #Register {
+            color: red;
+            font-size: 24px;
+            font-weight: 800;
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        .header-form {
+            font-weight: 800;
+        }
+
+        .form{
+            display: block;
+        }
+        .gender {
+            flex-direction: row-reverse;
+        }
+        /*top right bottom left*/
+        .relative{
+            position: relative;
+            left: 20px;
+        }
+        .absolute{
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+        }
+        .fixed{
+            /* ติดอยู่กับที่ */
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+        .sticky{
+            /* ติดอยู่กับที่จนกว่าจะชนกับอีก element*/
+            position: sticky;
+            top: 50px;
+        }
+        .container {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Static">Static</div>
+        <div class="relative">Relative</div>
+        <div class="absolute">Absolute</div>
+        <div class="fixed">Fixed</div>
+        <div class="sticky">Sticky</div>
+    </div>
+
+
+    <!--form-->
+
+    
+
+    <div id="Register">Register form</div>
+    <span class=header-form>ชื่อ</span>
+
+    <input class="form" type="text">
+    <span class=header-form>นามสกุล</span>
+
+    <input class="form" type="text"> <br>
+    อายุ
+    <input class="form" type="number" min="0" max="100">
+    <div class="gender">
+        เพศ
+        <div>
+            <input name="gender" type="radio"> ชาย
+        </div>
+        <div>
+            <input name="gender" type="radio"> หญิง
+        </div>
+        <div>
+            <input name="gender" type="radio"> อื่นๆ
+        </div>
+    </div>
+    <div>
+        งานอดิเรก
+        <div>
+            <input name="hobby" type="checkbox"> อ่านหนังสือ
+        </div>
+        <div>
+            <input name="hobby" type="checkbox"> ดูหนัง
+        </div>
+        <div>
+            <input name="hobby" type="checkbox"> ฟังเพลง
+        </div>
+    </div>
+    <div>
+        คำอธิบาย
+        <textarea></textarea>
+    </div>
+    <button>ส่งข้อมูล</button>
+</body>
+
+</html>
