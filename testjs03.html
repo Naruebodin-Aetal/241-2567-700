@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hello">hello <span style="display: none;">abc</span></div>
+
+    <script>
+        let helloDOM = document.getElementById('hello');
+        console.log(helloDOM.textContent);//ดึงข้อความทั้งหมด
+        console.log(helloDOM.innerText);//ดึงข้อความที่มองเห็นเท่านั้นไม่นับ none
+        console.log(helloDOM.innerHTML);//ดึงข้อความทั้งหมดรวม tag
+    </script>
+    
+</body>
+</html>
