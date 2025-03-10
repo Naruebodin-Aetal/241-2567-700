@@ -104,8 +104,9 @@ const submitData = async () =>{
             }
         }
     */
+    let message = "บันทึกข้อมูลเรียบร้อย";
    if(mode == 'CREATE'){
-    const response = await axios.post (`BASE_URL/users`, userData)
+    const response = await axios.post (`${BASE_URL}/users`, userData)
     console.log('response',response.data);
    }else{
     const response = await axios.put(`${BASE_URL}/users/${selectedId}`, userData)
@@ -127,6 +128,7 @@ const submitData = async () =>{
         }
         let htmlData = '<div>'
         htmlData += `<div> ${error.message} </div>`
+        htmlData += '<ul>'
         for (let i=0; i<error.errors.length; i++){
             htmlData += `<li> ${error.errors[i]} </li>`
         }

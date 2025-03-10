@@ -61,6 +61,52 @@ input.form, textarea{
     display: block;
 }
 
+.newButton{
+    background-color: lightblue;
+    border: 2px solid blue;
+    color: blue;
+    padding: 10px;
+    border-radius: 45px;
+    cursor: pointer;
+    width: 20%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns:0.5fr 3fr 1fr 1fr; /* คอลัมน์สำหรับ ชื่อ | Edit | Delete */
+    column-count: 4;
+    column-rule: 5px solid black;
+    gap: 10px; /* เว้นช่องว่างระหว่างคอลัมน์ */
+    width: 60%;
+    margin: auto;
+}
+.mcontainer {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, pink, lightblue);
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.subcontainer {
+    width: 5700%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    background: linear-gradient(to bottom, lightgray, gray);
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.buttonCG:hover{
+    background-color: #04AA6D;
+}
+.buttonCR:hover{
+    background-color: red;
+}
+
 @media screen and (max-width: 768px){
     .flex{
         flex-direction: column;

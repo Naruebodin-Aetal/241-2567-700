@@ -19,10 +19,14 @@ const loadData = async () => {
     let htmlData = '<div>'
     for (let i = 0; i < response.data.length; i++) {
         let user = response.data[i]
-        htmlData += `<div>
-        ${user.id} ${user.firstname} ${user.lastname}
-        <a href='index.html?id=${user.id}'><button>Edit</button></a>
-        <button class = 'delete' data-id='${user.id}' >Delete</button>
+        htmlData += `<div class='grid-container subcontainer'>
+        <div>${user.id}</div> ${user.firstname} ${user.lastname}
+        <a href='index.html?id=${user.id}'>
+            <button class='buttonCG'>Edit</button>
+        </a>
+        <button class = 'delete buttonCR' data-id='${user.id}' >
+            Delete
+        </button>
         </div>`
     }
     htmlData += '</div>'
