@@ -16,20 +16,35 @@ const loadData = async () => {
     const userDOM = document.getElementById('user')
     // 2. นำ user ทั้งหมด โหลดกลับเข้าไปใน html
 
-    let htmlData = '<div>'
+    let htmlData = `<table class="bgIMG subcontainer">
+        <tr class="titleC">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>`
+
     for (let i = 0; i < response.data.length; i++) {
         let user = response.data[i]
-        htmlData += `<div class='grid-container subcontainer'>
-        <div>${user.id}</div> ${user.firstname} ${user.lastname}
-        <a href='index.html?id=${user.id}'>
-            <button class='buttonCG'>Edit</button>
-        </a>
-        <button class = 'delete buttonCR' data-id='${user.id}' >
-            Delete
-        </button>
-        </div>`
+        htmlData += `
+            <tr>
+                <td>
+                    ${user.id}
+                </td>
+                <td>
+                    ${user.firstname} ${user.lastname}
+                </td>
+                <td>
+                    <a href='index.html?id=${user.id}'>
+                    <button class='buttonCG'>Edit</button></a>
+                </td>
+                <td>
+                    <button class = 'delete buttonCR' data-id='${user.id}' >Delete</button>
+                </td>
+            </tr>
+        `
     }
-    htmlData += '</div>'
+    htmlData += '</table>'
     userDOM.innerHTML = htmlData
 
     // 3. ลบ user
