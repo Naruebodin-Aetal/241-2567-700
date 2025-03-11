@@ -96,6 +96,7 @@ input.form, textarea{
     background: linear-gradient(to right, pink, lightblue);
     padding: 20px;
     box-sizing: border-box;
+    border-radius: 10px;
     
 }
 .subcontainer {
@@ -107,6 +108,7 @@ input.form, textarea{
     background: linear-gradient(to bottom, lightgray, gray);
     padding: 20px;
     box-sizing: border-box;
+    border-radius: 10px;
     
 }
 .buttonCG:hover{
