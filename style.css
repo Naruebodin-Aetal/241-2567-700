@@ -15,7 +15,9 @@ body {
     background: linear-gradient(to right, orange, cyan);
     padding: 20px;
     box-sizing: border-box;
-    
+    opacity: 0.9;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 .header {
     font-size: 30px;
@@ -42,6 +44,7 @@ input.form, textarea{
     border: 1px solid red;
     width: 50%;
     height: 40px;
+    border-radius: 12px
 }
 
 .message{
@@ -69,10 +72,14 @@ input.form, textarea{
     border-radius: 45px;
     cursor: pointer;
     width: 12%;
+    box-shadow: 0 5px #999;
 }
 .newButton:hover{
+    text-align: center;
+    font-size: 20px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: lightgreen;
+    box-shadow: 0 5px #999;
 }
 .bgIMG{
     background-size: cover;
@@ -97,7 +104,7 @@ input.form, textarea{
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
-    
+    opacity: 0.9;
 }
 .subcontainer {
     width: 5700%;
@@ -109,10 +116,22 @@ input.form, textarea{
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
+    opacity: 100%;
     
+}
+.buttonCG{
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 .buttonCG:hover{
     background-color: #04AA6D;
+
+}
+.buttonCR{
+    border-radius: 5px;
+    padding: 10px;
 }
 .buttonCR:hover{
     background-color: red;

@@ -39,7 +39,7 @@ const loadData = async () => {
                     <button class='buttonCG'>Edit</button></a>
                 </td>
                 <td>
-                    <button class = 'delete buttonCR' data-id='${user.id}' >Delete</button>
+                    <button class = 'delete buttonCR ' data-id='${user.id}' >Delete</button>
                 </td>
             </tr>
         `
