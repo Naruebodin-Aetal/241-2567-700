@@ -11,7 +11,7 @@ body {
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-    /*background-color: cyan;*/
+    
     background: linear-gradient(to right, orange, cyan);
     padding: 20px;
     box-sizing: border-box;
@@ -65,9 +65,9 @@ input.form, textarea{
 }
 
 .newButton{
-    background-color: lightblue;
-    border: 2px solid blue;
-    color: blue;
+    background-image: radial-gradient( lightblue, blue);
+    border: 2px solid black;
+    color: black;
     padding: 2px;
     border-radius: 45px;
     cursor: pointer;
@@ -76,7 +76,7 @@ input.form, textarea{
 }
 .newButton:hover{
     text-align: center;
-    font-size: 20px;
+    background-image: radial-gradient( lightgreen, lightblue);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: lightgreen;
     box-shadow: 0 5px #999;
@@ -112,7 +112,7 @@ input.form, textarea{
     margin-left: auto;
     margin-right: auto;
     border: 2px solid black;
-    background: linear-gradient(to bottom, lightgray, gray);
+    background: linear-gradient(to top, rgba(66,4,126, 1), rgba(163, 98, 228, 1));
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -147,6 +147,16 @@ th, td{
 .titleC{
     background-color: black;
     color: white;
+}
+
+.background2{
+    background: linear-gradient(to bottom, white, white);
+    
+}
+
+.background2:hover {
+    background: linear-gradient(to bottom, orange, yellow);
+   // background-color:#fcef64;
 }
 
 @media screen and (max-width: 768px){

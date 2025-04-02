@@ -27,7 +27,7 @@ const loadData = async () => {
     for (let i = 0; i < response.data.length; i++) {
         let user = response.data[i]
         htmlData += `
-            <tr>
+            <tr class="background2">
                 <td>
                     ${user.id}
                 </td>
